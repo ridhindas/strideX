@@ -3,9 +3,9 @@ pipeline {
 
     environment {
         // Docker Hub configuration - Replace with your Docker Hub username/org
-        DOCKERHUB_USERNAME       = 'your-dockerhub-username'
+        DOCKERHUB_USERNAME       = 'ridhindas'
         DOCKER_IMAGE_NAME        = "${DOCKERHUB_USERNAME}/stridex-ecommerce"
-        DOCKERHUB_CREDENTIALS_ID = 'dockerhub-credentials' // ID configured in Jenkins Credentials Store
+        DOCKERHUB_CREDENTIALS_ID = 'docker-cred' // ID configured in Jenkins Credentials Store
 
         // Build identifiers
         IMAGE_TAG                = "${BUILD_NUMBER}"
